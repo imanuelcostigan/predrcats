@@ -12,8 +12,14 @@
 #'         only returns \code{TRUE} for floating point numbers.
 #' }
 #' @param x object to be tested.
-#' @seealso \link{type-predicates} \link{scalar-type-predicates}
+#' @return \code{TRUE} or \code{FALSE}
+#' @family type predicates
 #' @name bare-type-predicates
+#' @examples
+#' is_list(data.frame(a = 1))
+#' is_bare_list(data.frame(a = 1))
+#' is_double(Sys.Date())
+#' is_bare_double(Sys.Date())
 NULL
 
 #' @export
