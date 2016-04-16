@@ -4,3 +4,4 @@
 ^README\.Rmd$
 ^README-.*\.png$
 ^CONTRIBUTING\.md$
+^\.github$
