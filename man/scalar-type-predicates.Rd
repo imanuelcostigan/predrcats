@@ -46,6 +46,7 @@ is_scalar_integer(1:2)
 is_scalar_integer(1L)
 }
 \seealso{
-\link{type-predicates} \link{bare-type-predicates}
+Other type.predicates: \code{\link{bare-type-predicates}},
+  \code{\link{type-predicates}}
 }
 

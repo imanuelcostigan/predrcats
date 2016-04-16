@@ -31,6 +31,9 @@ is_bare_logical(x)
 \arguments{
 \item{x}{object to be tested.}
 }
+\value{
+\code{TRUE} or \code{FALSE}
+}
 \description{
 These predicates check for a given type but only return \code{TRUE}
 for bare R objects. Bare objects have no class attributes. For
@@ -45,7 +48,14 @@ example, a data frame is a list, but not a bare list.
         only returns \code{TRUE} for floating point numbers.
 }
 }
+\examples{
+is_list(data.frame(a = 1))
+is_bare_list(data.frame(a = 1))
+is_double(Sys.Date())
+is_bare_double(Sys.Date())
+}
 \seealso{
-\link{type-predicates} \link{scalar-type-predicates}
+Other type.predicates: \code{\link{scalar-type-predicates}},
+  \code{\link{type-predicates}}
 }
 

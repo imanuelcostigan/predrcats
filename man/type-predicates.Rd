@@ -77,6 +77,7 @@ is_integer(factor(letters))
 is_logical(NA)
 }
 \seealso{
-\link{bare-type-predicates} \link{scalar-type-predicates}
+Other type.predicates: \code{\link{bare-type-predicates}},
+  \code{\link{scalar-type-predicates}}
 }
 

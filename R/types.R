@@ -19,7 +19,7 @@
 #'
 #' @param x object to be tested.
 #' @return \code{TRUE} or \code{FALSE}.
-#' @seealso \link{bare-type-predicates} \link{scalar-type-predicates}
+#' @family type predicates
 #' @examples
 #' is_atomic(NULL)
 #' is_vector(1:3)

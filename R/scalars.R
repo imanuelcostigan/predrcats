@@ -5,7 +5,7 @@
 #'
 #' @param x object to be tested.
 #' @return \code{TRUE} or \code{FALSE}
-#' @seealso \link{type-predicates} \link{bare-type-predicates}
+#' @family type predicates
 #' @name scalar-type-predicates
 #' @examples
 #' is_scalar_list(list(1))
