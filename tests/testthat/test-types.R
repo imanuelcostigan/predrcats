@@ -16,4 +16,8 @@ test_that("Type predicates work", {
   expect_false(is_character(factor(letters)))
   expect_true(is_integer(factor(letters)))
   expect_true(is_logical(NA))
+  expect_false(is_logical(0))
+  expect_true(is_null(NULL))
+  expect_true(is_function(function(x) x))
+  expect_false(is_function(.Primitive("sqrt")))
 })
