@@ -13,3 +13,5 @@ Description: A collection of predicate functions that return a single logical
   Stefan Milton Bache.
 License: GPL-3
 LazyData: TRUE
+URL: https://github.com/imanuelcostigan/predrcats
+BugReports: https://github.com/imanuelcostigan/predrcats/issues
