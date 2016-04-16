@@ -8,6 +8,8 @@ Authors@R: c(
   person("Lionel", "Henry", , "lionel.hry@gmail.com", "ctb"),
   person("RStudio", role = "cph"))
 Description: A collection of predicate functions that return a single logical
-  value. These were originally part of the 'purrr' package.
+  value. The original predicate functions included in this package were
+  originally part of the 'purrr' package. The 'predrcats' name came courtesy of
+  Stefan Milton Bache.
 License: GPL-3
 LazyData: TRUE
