@@ -20,4 +20,4 @@ knitr::opts_chunk$set(
 
 A collection of predicate functions that return a single logical value. The
 original predicate functions included in this package were originally part of
-the 'purrr' package. The 'predrcats' name came courtesy of Stefan Milton Bache.
+the 'purrr' package. The 'predrcats' name came [courtesy of Stefan Milton Bache](https://github.com/hadley/purrr/issues/124#issuecomment-155169626).
