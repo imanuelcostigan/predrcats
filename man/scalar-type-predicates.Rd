@@ -31,9 +31,19 @@ is_scalar_logical(x)
 \arguments{
 \item{x}{object to be tested.}
 }
+\value{
+\code{TRUE} or \code{FALSE}
+}
 \description{
 These predicates check for a given type and whether the vector is
 "scalar", that is, of length 1.
+}
+\examples{
+is_scalar_list(list(1))
+is_scalar_list(list(1, 2))
+is_integer(1:2)
+is_scalar_integer(1:2)
+is_scalar_integer(1L)
 }
 \seealso{
 \link{type-predicates} \link{bare-type-predicates}
