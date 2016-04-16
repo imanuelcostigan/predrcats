@@ -60,11 +60,21 @@ Compare to base R functions:
 }
 }
 \examples{
-is_list(c(1, 2))
-is_list(list(1, 2))
+is_atomic(NULL)
+is_vector(1:3)
+is_vector(list(1:3))
+is_numeric(1)
+is_numeric(1:3)
+is_integer(1:3)
+is_double(1:3)
+is_double(c(1, 2, 3))
 is_atomic(as.Date("2013-01-01"))
 is_numeric(as.Date("2013-01-01"))
 is_numeric(as.POSIXct("2013-01-01"))
+is_character(letters)
+is_character(factor(letters))
+is_integer(factor(letters))
+is_logical(NA)
 }
 \seealso{
 \link{bare-type-predicates} \link{scalar-type-predicates}
