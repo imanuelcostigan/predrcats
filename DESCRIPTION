@@ -1,0 +1,13 @@
+Package: predrcats
+Type: Package
+Title: Predicate Functions with Sane Interfaces and Behaviours
+Version: 0.1.0
+Authors@R: c(
+  person("Imanuel", "Costigan",, "i.costigan@me.com", c("ctb", "cre")),
+  person("Hadley", "Wickham", , "hadley@rstudio.com", c("aut")),
+  person("Lionel", "Henry", , "lionel.hry@gmail.com", "ctb"),
+  person("RStudio", role = "cph"))
+Description: A collection of predicate functions that return a single logical
+  value. These were originally part of the 'purrr' package.
+License: GPL-3
+LazyData: TRUE
