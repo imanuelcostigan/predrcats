@@ -37,6 +37,9 @@ is_function(x)
 \arguments{
 \item{x}{object to be tested.}
 }
+\value{
+\code{TRUE} or \code{FALSE}.
+}
 \description{
 These type predicates aim to make type testing in R more
 consistent. They are wrappers around \code{\link{typeof}}, so
@@ -55,6 +58,13 @@ Compare to base R functions:
   \item \code{is_function()} returns \code{TRUE} only for regular
     functions, not special or primitive functions.
 }
+}
+\examples{
+is_list(c(1, 2))
+is_list(list(1, 2))
+is_atomic(as.Date("2013-01-01"))
+is_numeric(as.Date("2013-01-01"))
+is_numeric(as.POSIXct("2013-01-01"))
 }
 \seealso{
 \link{bare-type-predicates} \link{scalar-type-predicates}

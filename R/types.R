@@ -16,8 +16,16 @@
 #'   \item \code{is_function()} returns \code{TRUE} only for regular
 #'     functions, not special or primitive functions.
 #' }
+#'
 #' @param x object to be tested.
+#' @return \code{TRUE} or \code{FALSE}.
 #' @seealso \link{bare-type-predicates} \link{scalar-type-predicates}
+#' @examples
+#' is_list(c(1, 2))
+#' is_list(list(1, 2))
+#' is_atomic(as.Date("2013-01-01"))
+#' is_numeric(as.Date("2013-01-01"))
+#' is_numeric(as.POSIXct("2013-01-01"))
 #' @name type-predicates
 NULL
 
