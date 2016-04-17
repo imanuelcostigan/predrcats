@@ -63,21 +63,15 @@ is_scalar_logical <- function(x) {
   is_logical(x) && length(x) == 1
 }
 
-#' Is a vector/list empty?
-#'
-#' @param x object to test
 #' @export
-#' @examples
-#' is_empty(NULL)
-#' is_empty(list())
-#' is_empty(list(NULL))
-is_empty <- function(x) length(x) == 0
+#' @rdname scalar-type-predicates
+is_scalar_complex <- function(x) {
+  is_complex(x) && length(x) == 1
+}
 
-#' Is a formula?
-#'
-#' @inheritParams is_empty
 #' @export
-#' @examples
-#' x <- disp ~ am
-#' is_formula(x)
-is_formula <- function(x) inherits(x, "formula")
+#' @rdname scalar-type-predicates
+is_scalar_raw <- function(x) {
+  is_raw(x) && length(x) == 1
+}
+
