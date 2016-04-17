@@ -3,11 +3,13 @@
 \name{scalar-type-predicates}
 \alias{is_scalar_atomic}
 \alias{is_scalar_character}
+\alias{is_scalar_complex}
 \alias{is_scalar_double}
 \alias{is_scalar_integer}
 \alias{is_scalar_list}
 \alias{is_scalar_logical}
 \alias{is_scalar_numeric}
+\alias{is_scalar_raw}
 \alias{is_scalar_vector}
 \alias{scalar-type-predicates}
 \title{Scalar type predicates}
@@ -27,6 +29,10 @@ is_scalar_double(x)
 is_scalar_character(x)
 
 is_scalar_logical(x)
+
+is_scalar_complex(x)
+
+is_scalar_raw(x)
 }
 \arguments{
 \item{x}{object to be tested.}
