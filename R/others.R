@@ -51,6 +51,14 @@ is_date <- function(x) is(x, "Date")
 #' is_time(Sys.time())
 is_time <- function(x) inherits(x, "POSIXt")
 
+#' @export
+#' @rdname is_time
+is_POSIXct <- function(x) is(x, "POSIXct")
+
+#' @export
+#' @rdname is_time
+is_POSIXlt <- function(x) is(x, "POSIXlt")
+
 #' NA predicates
 #'
 #' \code{is_na} returns \code{TRUE} if \code{x} are all \code{NA} and otherwise
