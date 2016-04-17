@@ -67,7 +67,7 @@ is_time <- function(x) inherits(x, "POSIXt")
 #' any_na(c(1, NA))
 #' any_na(list(1, list(1, NA)))
 #' @name nas
-is_na <- function(x) is.na(x) && length(x) == 1
+is_na <- function(x) length(x) == 1 && is.na(x)
 
 #' @export
 #' @rdname nas

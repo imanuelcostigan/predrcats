@@ -18,60 +18,60 @@ NULL
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_list <- function(x) {
-  is_list(x) && length(x) == 1
+  length(x) == 1 && is_list(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_atomic <- function(x) {
-  is_atomic(x) && length(x) == 1
+  length(x) == 1 && is_atomic(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_vector <- function(x) {
-  is_vector(x) && length(x) == 1
+  length(x) == 1 && is_vector(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_numeric <- function(x) {
-  is_numeric(x) && length(x) == 1
+  length(x) == 1 && is_numeric(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_integer <- function(x) {
-  is_integer(x) && length(x) == 1
+  length(x) == 1 && is_integer(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_double <- function(x) {
-  is_double(x) && length(x) == 1
+  length(x) == 1 && is_double(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_character <- function(x) {
-  is_character(x) && length(x) == 1
+  length(x) == 1 && is_character(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_logical <- function(x) {
-  is_logical(x) && length(x) == 1
+  length(x) == 1 && is_logical(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_complex <- function(x) {
-  is_complex(x) && length(x) == 1
+  length(x) == 1 && is_complex(x)
 }
 
 #' @export
 #' @rdname scalar-type-predicates
 is_scalar_raw <- function(x) {
-  is_raw(x) && length(x) == 1
+  length(x) == 1 && is_raw(x)
 }
 
