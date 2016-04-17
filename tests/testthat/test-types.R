@@ -20,4 +20,7 @@ test_that("Type predicates work", {
   expect_true(is_null(NULL))
   expect_true(is_function(function(x) x))
   expect_false(is_function(.Primitive("sqrt")))
+  expect_true(is_complex(1i))
+  expect_false(is_complex(1))
+  expect_true(is_raw(as.raw(40)))
 })

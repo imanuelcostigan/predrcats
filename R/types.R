@@ -99,6 +99,18 @@ is_function <- function(x) {
   typeof(x) == "closure"
 }
 
+#' @export
+#' @rdname type-predicates
+is_complex <- function(x) {
+  typeof(x) == "complex"
+}
+
+#' @export
+#' @rdname type-predicates
+is_raw <- function(x) {
+  typeof(x) == "raw"
+}
+
 is_name <- function(x) {
   typeof(x) == "name"
 }

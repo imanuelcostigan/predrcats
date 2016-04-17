@@ -3,6 +3,7 @@
 \name{type-predicates}
 \alias{is_atomic}
 \alias{is_character}
+\alias{is_complex}
 \alias{is_double}
 \alias{is_function}
 \alias{is_integer}
@@ -10,6 +11,7 @@
 \alias{is_logical}
 \alias{is_null}
 \alias{is_numeric}
+\alias{is_raw}
 \alias{is_vector}
 \alias{type-predicates}
 \title{Type predicates}
@@ -33,6 +35,10 @@ is_logical(x)
 is_null(x)
 
 is_function(x)
+
+is_complex(x)
+
+is_raw(x)
 }
 \arguments{
 \item{x}{object to be tested.}
