@@ -9,6 +9,9 @@ is_empty(x)
 \arguments{
 \item{x}{object to test}
 }
+\value{
+\code{TRUE} if length of \code{x} is zero. Otherwise \code{FALSE}
+}
 \description{
 Is a vector/list empty?
 }

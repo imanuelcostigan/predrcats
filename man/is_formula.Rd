@@ -9,6 +9,10 @@ is_formula(x)
 \arguments{
 \item{x}{object to test}
 }
+\value{
+\code{TRUE} if \code{x} inherits from \code{formula}. Otherwise
+  \code{FALSE}
+}
 \description{
 Is a formula?
 }
