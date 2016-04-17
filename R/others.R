@@ -70,4 +70,8 @@ is_na <- function(x) all(is.na(x))
 
 #' @export
 #' @rdname nas
+is_scalar_na <- function (x) length(x) == 1 && is.na(x)
+
+#' @export
+#' @rdname nas
 any_na <- function(x) anyNA(x)

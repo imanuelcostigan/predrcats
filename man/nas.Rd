@@ -3,10 +3,13 @@
 \name{nas}
 \alias{any_na}
 \alias{is_na}
+\alias{is_scalar_na}
 \alias{nas}
 \title{NA predicates}
 \usage{
 is_na(x)
+
+is_scalar_na(x)
 
 any_na(x)
 }
@@ -14,9 +17,8 @@ any_na(x)
 \item{x}{object to test}
 }
 \description{
-\code{is_na} returns \code{TRUE} if \code{x} is an \code{NA} of length one
-and otherwise \code{FALSE} (including when \code{x} a vector of more than
-one \code{NA}). Meanwhile \code{any_na} returns \code{TRUE} if \code{x}
+\code{is_na} returns \code{TRUE} if \code{x} are all \code{NA} and otherwise
+\code{FALSE}. Meanwhile \code{any_na} returns \code{TRUE} if \code{x}
 contains any NAs (but not recursively to lists and pairlists), otherwise
 \code{FALSE}.
 }
