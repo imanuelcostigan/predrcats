@@ -2,13 +2,16 @@
 % Please edit documentation in R/types.R
 \name{type-predicates}
 \alias{is_atomic}
+\alias{is_call}
 \alias{is_character}
 \alias{is_complex}
 \alias{is_double}
 \alias{is_function}
 \alias{is_integer}
+\alias{is_language}
 \alias{is_list}
 \alias{is_logical}
+\alias{is_name}
 \alias{is_null}
 \alias{is_numeric}
 \alias{is_raw}
@@ -39,6 +42,12 @@ is_function(x)
 is_complex(x)
 
 is_raw(x)
+
+is_name(x)
+
+is_call(x)
+
+is_language(x)
 }
 \arguments{
 \item{x}{object to be tested.}

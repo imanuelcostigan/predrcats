@@ -23,4 +23,7 @@ test_that("Type predicates work", {
   expect_true(is_complex(1i))
   expect_false(is_complex(1))
   expect_true(is_raw(as.raw(40)))
+  expect_true(is_name(as.name("arrg")))
+  expect_true(is_call(call("round", 10.5)))
+  expect_true(is_language(call("round", 10.5)))
 })

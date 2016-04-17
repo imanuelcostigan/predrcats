@@ -111,14 +111,20 @@ is_raw <- function(x) {
   typeof(x) == "raw"
 }
 
+#' @export
+#' @rdname type-predicates
 is_name <- function(x) {
   typeof(x) == "name"
 }
 
+#' @export
+#' @rdname type-predicates
 is_call <- function(x) {
   typeof(x) == "language"
 }
 
+#' @export
+#' @rdname type-predicates
 is_language <- function(x) {
   is_call(x) || is_name(x) || is_atomic(x)
 }
