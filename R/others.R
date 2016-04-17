@@ -51,22 +51,24 @@ is_date <- function(x) is(x, "Date")
 #' is_time(Sys.time())
 is_time <- function(x) inherits(x, "POSIXt")
 
-#' Is \code{NA}?
+#' NA predicates
 #'
-#' \code{is_na} returns a logical vector containing \code{TRUE} if \code{x} is
-#' \code{NA} and otherwise \code{FALSE}, while \code{any_na} returns \code{TRUE}
-#' if \code{x} contains any NAs (recursively to lists and pairlists), otherwise
+#' \code{is_na} returns \code{TRUE} if \code{x} is an \code{NA} of length one
+#' and otherwise \code{FALSE} (including when \code{x} a vector of more than
+#' one \code{NA}). Meanwhile \code{any_na} returns \code{TRUE} if \code{x}
+#' contains any NAs (but not recursively to lists and pairlists), otherwise
 #' \code{FALSE}.
 #'
 #' @inheritParams is_empty
 #' @export
 #' @examples
 #' is_na(c(1, NA))
+#' is_na(NA)
 #' any_na(c(1, NA))
 #' any_na(list(1, list(1, NA)))
 #' @name nas
-is_na <- function(x) is.na(x)
+is_na <- function(x) is.na(x) && length(x) == 1
 
 #' @export
 #' @rdname nas
-any_na <- function (x) anyNA(x, TRUE)
+any_na <- function(x) anyNA(x)
