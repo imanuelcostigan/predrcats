@@ -10,4 +10,11 @@ test_that("Bare type predicates work", {
   expect_true(is_bare_integer(as.matrix(1:10)))
   expect_false(is_bare_integer(matrix(c(1,2,3, 11,12,13), nrow = 2, ncol = 3,
     byrow = TRUE, dimnames = list(c("row1", "row2"), c("C.1", "C.2", "C.3")))))
+  expect_true(is_bare_atomic(1:2))
+  expect_false(is_bare_atomic(Sys.Date()))
+  expect_true(is_bare_vector(1:2))
+  expect_true(is_bare_numeric(1))
+  expect_false(is_bare_numeric(Sys.Date()))
+  expect_true(is_bare_character("a"))
+  expect_true(is_bare_logical(TRUE))
 })
