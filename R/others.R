@@ -53,9 +53,8 @@ is_time <- function(x) inherits(x, "POSIXt")
 
 #' NA predicates
 #'
-#' \code{is_na} returns \code{TRUE} if \code{x} is an \code{NA} of length one
-#' and otherwise \code{FALSE} (including when \code{x} a vector of more than
-#' one \code{NA}). Meanwhile \code{any_na} returns \code{TRUE} if \code{x}
+#' \code{is_na} returns \code{TRUE} if \code{x} are all \code{NA} and otherwise
+#' \code{FALSE}. Meanwhile \code{any_na} returns \code{TRUE} if \code{x}
 #' contains any NAs (but not recursively to lists and pairlists), otherwise
 #' \code{FALSE}.
 #'
@@ -67,7 +66,7 @@ is_time <- function(x) inherits(x, "POSIXt")
 #' any_na(c(1, NA))
 #' any_na(list(1, list(1, NA)))
 #' @name nas
-is_na <- function(x) length(x) == 1 && is.na(x)
+is_na <- function(x) all(is.na(x))
 
 #' @export
 #' @rdname nas
