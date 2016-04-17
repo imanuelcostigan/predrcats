@@ -56,7 +56,8 @@ is_time <- function(x) inherits(x, "POSIXt")
 #' \code{is_na} returns \code{TRUE} if \code{x} are all \code{NA} and otherwise
 #' \code{FALSE}. Meanwhile \code{any_na} returns \code{TRUE} if \code{x}
 #' contains any NAs (but not recursively to lists and pairlists), otherwise
-#' \code{FALSE}.
+#' \code{FALSE}, while \code{is_scalar_na} returns \code{TRUE} if \code{x} is
+#' singular \code{NA}.
 #'
 #' @inheritParams is_empty
 #' @export

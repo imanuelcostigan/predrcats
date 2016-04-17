@@ -20,7 +20,8 @@ any_na(x)
 \code{is_na} returns \code{TRUE} if \code{x} are all \code{NA} and otherwise
 \code{FALSE}. Meanwhile \code{any_na} returns \code{TRUE} if \code{x}
 contains any NAs (but not recursively to lists and pairlists), otherwise
-\code{FALSE}.
+\code{FALSE}, while \code{is_scalar_na} returns \code{TRUE} if \code{x} is
+singular \code{NA}.
 }
 \examples{
 is_na(c(1, NA))
