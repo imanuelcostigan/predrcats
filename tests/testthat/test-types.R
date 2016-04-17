@@ -26,4 +26,5 @@ test_that("Type predicates work", {
   expect_true(is_name(as.name("arrg")))
   expect_true(is_call(call("round", 10.5)))
   expect_true(is_language(call("round", 10.5)))
+  expect_true(is_language(y~x))
 })

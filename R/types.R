@@ -114,7 +114,7 @@ is_raw <- function(x) {
 #' @export
 #' @rdname type-predicates
 is_name <- function(x) {
-  typeof(x) == "name"
+  typeof(x) == "name" || typeof(x) == "symbol"
 }
 
 #' @export
