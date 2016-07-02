@@ -38,7 +38,7 @@ is_formula <- function(x) inherits(x, "formula")
 #' @examples
 #' is_date(Sys.Date())
 #' is_date(Sys.time())
-is_date <- function(x) is(x, "Date")
+is_date <- function(x) methods::is(x, "Date")
 
 #' Is a time (Date-Time)?
 #'
@@ -53,11 +53,11 @@ is_time <- function(x) inherits(x, "POSIXt")
 
 #' @export
 #' @rdname is_time
-is_POSIXct <- function(x) is(x, "POSIXct")
+is_POSIXct <- function(x) methods::is(x, "POSIXct")
 
 #' @export
 #' @rdname is_time
-is_POSIXlt <- function(x) is(x, "POSIXlt")
+is_POSIXlt <- function(x) methods::is(x, "POSIXlt")
 
 #' NA predicates
 #'

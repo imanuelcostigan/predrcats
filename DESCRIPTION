@@ -19,4 +19,5 @@ Suggests:
     testthat,
     covr
 RoxygenNote: 5.0.1
-Imports: tools
+Imports: tools,
+    methods

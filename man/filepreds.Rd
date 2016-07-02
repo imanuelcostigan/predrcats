@@ -31,7 +31,7 @@ logical value
 File system predicates
 }
 \examples{
-does_file_exist(system.file("DESCRIPTION")
+does_file_exist(system.file("DESCRIPTION"))
 is_directory(system.file())
 has_extension(system.file("DESCRIPTION"), "")
 has_extension(system.file("R/base.rdb"), "rdb")
